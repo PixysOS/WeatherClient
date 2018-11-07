@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.pixys.weather.client;
 
 import android.annotation.SuppressLint;
 import android.content.ContentProvider;
@@ -28,11 +28,11 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import static org.pixelexperience.weather.client.Constants.DEBUG;
-import static org.pixelexperience.weather.client.Constants.MAX_CONNECTION_ATTEMPTS;
-import static org.pixelexperience.weather.client.WeatherInfo.WEATHER_UPDATE_ERROR;
-import static org.pixelexperience.weather.client.WeatherInfo.WEATHER_UPDATE_RUNNING;
-import static org.pixelexperience.weather.client.WeatherInfo.WEATHER_UPDATE_SUCCESS;
+import static com.pixys.weather.client.Constants.DEBUG;
+import static com.pixys.weather.client.Constants.MAX_CONNECTION_ATTEMPTS;
+import static com.pixys.weather.client.WeatherInfo.WEATHER_UPDATE_ERROR;
+import static com.pixys.weather.client.WeatherInfo.WEATHER_UPDATE_RUNNING;
+import static com.pixys.weather.client.WeatherInfo.WEATHER_UPDATE_SUCCESS;
 
 public class WeatherContentProvider extends ContentProvider {
     private static final String TAG = "WeatherClient:WeatherContentProvider";

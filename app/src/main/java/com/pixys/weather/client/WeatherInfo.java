@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.pixys.weather.client;
 
 public class WeatherInfo {
 

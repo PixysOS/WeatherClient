@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Weather Information Provider</string>
+     <!--<string name="awareness_api_key">Uncomment this line and add you api here</string>-->
 </resources>

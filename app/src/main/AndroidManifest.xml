@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.pixelexperience.weather.client">
+    package="com.pixys.weather.client">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
-        android:name="org.pixelexperience.weather.client.SUPPORTED"
+        android:name="com.pixys.weather.client.SUPPORTED"
         android:required="true" />
 
     <permission
-        android:name="org.pixelexperience.weather.client.READ_WEATHER"
+        android:name="com.pixys.weather.client.READ_WEATHER"
         android:protectionLevel="signature|privileged" />
 
     <application
@@ -23,9 +23,9 @@
 
         <provider
             android:name=".WeatherContentProvider"
-            android:authorities="org.pixelexperience.weather.client.provider"
+            android:authorities="com.pixys.weather.client.provider"
             android:exported="true"
-            android:readPermission="org.pixelexperience.weather.client.READ_WEATHER" />
+            android:readPermission="com.pixys.weather.client.READ_WEATHER" />
 
         <meta-data
             android:name="com.google.android.awareness.API_KEY"

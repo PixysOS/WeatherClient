@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.pixys.weather.client;
 
 import android.os.StrictMode;
 import android.util.Log;
@@ -17,7 +17,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static org.pixelexperience.weather.client.Constants.DEBUG;
+import static com.pixys.weather.client.Constants.DEBUG;
 
 class SunriseSunsetRestApi {
 

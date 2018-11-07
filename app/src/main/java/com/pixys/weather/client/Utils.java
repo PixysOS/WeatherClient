@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.pixys.weather.client;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -18,22 +18,16 @@ public class Utils {
     }
     public static Boolean isBuildValid(Context context){
         PackageManager pm = context.getPackageManager();
-        if (pm != null && !pm.hasSystemFeature("org.pixelexperience.weather.client.SUPPORTED")) {
+        if (pm != null && !pm.hasSystemFeature("com.pixys.weather.client.SUPPORTED")) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.version","").isEmpty()) {
+        if (getSystemProperty("ro.pixys.version","").isEmpty()) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.build_date","").isEmpty()) {
+        if (getSystemProperty("ro.pixys.releasetype","").isEmpty()) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.build_type","").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.fingerprint","").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.device","").isEmpty()) {
+        if (getSystemProperty("ro.pixys.device","").isEmpty()) {
             return false;
         }
         return true;
