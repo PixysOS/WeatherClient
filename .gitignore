@@ -11,3 +11,4 @@
 /captures
 .externalNativeBuild
 **/*/res/values/api.xml
+*apk
